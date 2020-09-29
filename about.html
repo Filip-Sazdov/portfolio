@@ -10,32 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
       rel="stylesheet"
       />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
   </head>
   <body>
     <header class="page-header">
-      <img src="img/FS-Logo.png" class="page-header__item" alt="logo" />
+      <a href="index.html" class="page-header__item
+        page-header__item--active">filip sazdov</a>
       <nav class="page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-          </li>
-          <li role="presentation">
-            <a
-              href="about.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active">About</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem"
-              class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
+        <a href="about.html">about</a>
+        <a href="work.html">work</a>
       </nav>
+      <a href="contact.html" class="page-header__item">contact</a>
     </header>
     <hr />
     <main>
@@ -44,10 +30,10 @@
         navigate the links and learn more about me and my work.
       </p>
       <img
-      src="img/portrait_square.jpg"
-      class="profile__portrait"
-      alt="A photograph of me"
-      />
+        src="img/portrait_square.jpg"
+        class="profile__portrait"
+        alt="A photograph of me"
+        />
       <section class="description">
         <h1>About Me</h1>
         <p>
@@ -89,29 +75,27 @@
         </tbody>
       </table>
       <a href="files/cv.pdf" class="button" download>Download my CV</a>
-    </main>  
-      <footer
-        class="page-footer">
-        <p>Find
-          me
-          on</p>
-        <div
-          class="social-media">
-          <img
-            src="img/iconfinder_github-social-media_765246.svg"
-            alt="Github"
+    </main>
+    <footer class="page-footer">
+      <!-- <p>Find me on</p> -->
+      <div class="social-media">
+
+        <a href="https://github.com/Filip-Sazdov" target="_blank">
+          <img src="img/iconfinder_github-social-media_765246.svg" alt="Github"
             />
-          <img
-            src="img/iconfinder_twitter-social-media_765208.svg"
-            alt="Twitter"
-            />
-          <img
-            src="img/iconfinder_linkedin-social-media_765228.svg"
-            alt="LinkedIn"
-            />
-        </div>
-      </footer>
-      <script
-        src="js/tota11y.min.js"></script>
-    </body>
-  </html>
+        </a>
+        <a href="https://twitter.com/FilipSazdov" target="_blank">
+          <img src="img/iconfinder_twitter-social-media_765208.svg"
+            alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/filip-sazdov" target="_blank">
+          <img src="img/iconfinder_linkedin-social-media_765228.svg"
+            alt="LinkedIn" />
+        </a>
+
+      </div>
+    </footer>
+    <script
+      src="js/tota11y.min.js"></script>
+  </body>
+</html>
