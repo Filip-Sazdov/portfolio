@@ -5,8 +5,14 @@ Text Color: #EEBA30;
 Primary Color: #2b2b2b;
 Secondary Color: #AE0001;
 
+Various fonts I like:
 font-family: 'Raleway', sans-serif;
+font-family: 'Carrois Gothic SC', sans-serif;
+font-family: 'Encode Sans Semi Expanded', sans-serif;
+font-family: 'Metrophobic', sans-serif;
 */
+
+/* default style */
 
 :root {
   --text-color: #EEBA30;
@@ -18,6 +24,8 @@ font-family: 'Raleway', sans-serif;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -44,47 +52,58 @@ h2 {
   font-weight: var(--default-font-weight);
 }
 
+/* header and navigation style */
+
 .page-header {
-  display: flex;
-  flex-wrap: wrap;
   width: 90%;
-  height: 15%;
+  height: auto;
   margin: 0 auto;
   padding: 20px;
-  letter-spacing: 3px;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.page-header__item {
-  flex: 0 1 300px;
-  font-size: 1.1rem;
+.navigation {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
   text-align: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.page-header__item--active {
+.navigation__item {
+  padding: 0 30px;
+  flex: 0 1 300px;
+}
+
+.navigation__item--transition {
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 0 4px;
+  font-family: 'Metrophobic', sans-serif;
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+}
+
+.navigation__item--active {
   text-decoration: none;
 }
 
-nav a {
-  padding: 0 30px;
+.navigation__item--transition:hover, .navigation__item--transition:focus {
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--text-color);
 }
 
-a {
+.navigation__item--transition:active {
   color: var(--text-color);
 }
 
-/* a:visited {
-  color: var(--secondary-color);
-}  */
-
-a:hover, a:focus {
-  text-decoration: none;
-}
-
-a:active {
-  color: var(--secondary-color);
-}
+/* main content style */
 
 main {
   height: 70%;
@@ -105,7 +124,7 @@ main {
 .animated-name__item--left-top-down {
   text-align: right;
   font-size: 15vh;
-  animation: left-top-bottom 4s ease-in-out 0.5s 1 normal forwards;
+  /* animation: left-top-bottom 4s ease-in-out 0.5s 1 normal forwards; */
   margin: 0;
   padding: 0;
   opacity: 0;
@@ -125,7 +144,7 @@ main {
 .animated-name__item--right-top-down {
   text-align: right;
   font-size: 15vh;
-  animation: right-top-bottom 4s ease-in-out 0.5s 1 forwards;
+  /* animation: right-top-bottom 4s ease-in-out 0.5s 1 forwards; */
   opacity: 0;
 }
 
