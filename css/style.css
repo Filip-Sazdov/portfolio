@@ -45,7 +45,6 @@ body {
   width: 90%;
   height: 15vh;
   margin: 0 auto;
-  padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -90,11 +89,10 @@ body {
   color: var(--primary-color);
 }
 
-/* main content style */
+/* main content style home page*/
 
 main {
-  height: 70%;
-  border: 3px solid blue;
+  height: 70vh;
 }
 
 .wrapper {
@@ -146,10 +144,10 @@ main {
   }
   100% {
     opacity: 1;
-    color: var(--secondary-color);
     left: 0%;
     font-size: 10vw;
     bottom: 0%;
+    color: var(--secondary-color);
   }
 }
 
@@ -161,6 +159,7 @@ main {
 
 #location {
   text-align: left;
+  word-wrap: break-word;
 }
 
 #occupation, #location {
@@ -176,14 +175,16 @@ main {
   }
   100% {
     opacity: 1;
-    transform: translateY(-25%);
+    transform: translateY(-85%);
   }
 }
 
 .page-footer {
   clear: both;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 15vh;
   background: linear-gradient(var(--primary-color), var(--secondary-color));
