@@ -63,7 +63,6 @@ body {
 .navigation__item {
   padding: 0 30px;
   flex: 0 1 300px;
-  /* border: 1px solid red; */
   font-family: 'Carrois Gothic SC', sans-serif;
 }
 
@@ -99,7 +98,7 @@ main {
   height: 100%;
   display: grid;
   grid-template-columns: 45vw 50vw;
-  grid-template-rows: minmax(200px, 1fr) 25vh;
+  grid-template-rows: 40vh 25vh;
   grid-gap: 0 1.5em;
 }
 
@@ -159,7 +158,6 @@ main {
 
 #location {
   text-align: left;
-  word-wrap: break-word;
 }
 
 #occupation, #location {
@@ -175,14 +173,13 @@ main {
   }
   100% {
     opacity: 1;
-    transform: translateY(-85%);
+    transform: translateY(-75%);
   }
 }
 
 .page-footer {
   clear: both;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   text-align: center;
