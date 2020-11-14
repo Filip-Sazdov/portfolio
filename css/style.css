@@ -54,7 +54,7 @@ body {
   display: flex;
   flex: 1 1 auto;
   flex-wrap: wrap;
-  font-size: 2vh;
+  font-size: 2.5vh;
   text-align: center;
   justify-content: space-around;
   align-items: center;
@@ -90,7 +90,7 @@ body {
 
 /* main content style home page*/
 
-main {
+#home-page-main {
   height: 70vh;
 }
 
@@ -195,13 +195,37 @@ main {
   text-decoration: none;
 }
 
+/* About page styling */
+
+.description {
+  color: var(--text-color);
+  margin: 0 auto;
+  text-align: center;
+  min-height: 70vh;
+}
+
+.description__heading {
+  margin-bottom: 6vh;
+}
+
+#wrapper-about-page {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__portrait {
+  width: 300px;
+  border-radius: 5%;
+}
+
 .button, button {
-  /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  /* takes the font from the outer container */
   font-family: var(--default-font-family);
-  /* styles the button */
   background-color: #357b70;
   color: var(--text-color);
   text-decoration: none;
@@ -222,26 +246,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 .button__secondary {
   background-color: var(--text-color);
   color: var(--text-color);
-}
-
-.profile {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
-  color: var(--text-color);
-  border: 1px solid var(--secondary-color);
-}
-
-.profile__portrait {
-  float: left;
-  width: 300px;
-  margin-right: 40px;
-  border-radius: 50%;
-}
-
-.description {
-  margin: 0 auto;
-  text-align: center;
 }
 
 /* start grid fallback */

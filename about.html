@@ -27,12 +27,12 @@
     <header class="page-header">
       <nav class="page-header__item navigation">
         <div class="navigation__item">
-          <a href="index.html" class="
-            navigation__item--transition">filip
+          <a href="index.html" class="navigation__item--transition">filip
             sazdov</a>
         </div>
         <div class="navigation__item">
-          <a href="about.html" class="navigation__item--transition navigation__item--active">about</a>
+          <a href="about.html" class="navigation__item--transition
+            navigation__item--active">about</a>
         </div>
         <div class="navigation__item">
           <a href="work.html" class="navigation__item--transition">work</a>
@@ -42,60 +42,32 @@
         </div>
       </nav>
     </header>
-    <hr />
     <main>
-
-      <img
-        src="img/portrait_square.jpg"
-        class="profile__portrait"
-        alt="A photograph of me"
-        />
-
       <section class="description">
-        <h1>About Me</h1>
+        <h1 class='description__heading'>About Me</h1>
+        <div id="wrapper-about-page">
+          <div id="image-grid-item">
+            <img
+              src="img/portrait_square.jpg"
+              class="profile__portrait"
+              alt="A photograph of me"
+              />
+          </div>
+          <div id="description-paragraph">
+            <p>
+              Hi. I'm Filip, an aspiring web developer looking to expand my
+              programming skills and knowledge, build projects, make some money
+              and
+              have fun while doing it :)
+            </p>
+            <p>
+              This is my portfolio webpage. Please feel free to
+              navigate the links and check out my work or contact me.
+            </p>
 
-        <p>
-          Hi, I'm Filip, an aspiring web developer looking to expand my
-          programming skills and knowledge, build projects, make some money and
-          have fun while doing it :)
-        </p>
-        <p class="profile__description">
-          This is my portfolio <span>webpage</span>. Please feel free to
-          navigate the links and learn more about me and my work.
-        </p>
+          </div>
+        </div>
       </section>
-      <hr />
-      <table class="description">
-        <thead>
-          <tr>
-            <th>Skills</th>
-            <th>Years of Experience</th>
-            <th>Level of Expertise</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>1</td>
-            <td>Intermediate</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>1</td>
-            <td>Intermediate</td>
-          </tr>
-          <tr>
-            <td>Vanilla JavaScript</td>
-            <td>1</td>
-            <td>Beginner</td>
-          </tr>
-          <tr>
-            <td>T-SQL</td>
-            <td>1</td>
-            <td>Intermediate</td>
-          </tr>
-        </tbody>
-      </table>
 
     </main>
     <footer class="page-footer">
@@ -117,7 +89,7 @@
 
       </div>
     </footer>
-    <script
-      src="js/tota11y.min.js"></script>
+    <!-- <script
+      src="js/tota11y.min.js"></script> -->
   </body>
 </html>
