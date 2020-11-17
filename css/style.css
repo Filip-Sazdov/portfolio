@@ -222,30 +222,10 @@ body {
   border-radius: 5%;
 }
 
-.button, button {
-  border: none;
-  display: inline-block;
-  font-family: var(--default-font-family);
-  background-color: #357b70;
-  color: var(--text-color);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: 0.2s opacity;
-}
+/* Work page styling */
 
-button:hover, button:focus, .button:hover, .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
-
-.button__secondary {
-  background-color: var(--text-color);
-  color: var(--text-color);
+#grid-section {
+  padding-top: 5vh;
 }
 
 /* start grid fallback */
@@ -308,6 +288,32 @@ button:hover, button:focus, .button:hover, .button:focus {
   100% {
     fill: #f76414;
   }
+}
+
+.button, button {
+  border: none;
+  display: inline-block;
+  font-family: var(--default-font-family);
+  background-color: #357b70;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--text-color);
+  color: var(--text-color);
 }
 
 .sun {
