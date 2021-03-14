@@ -228,6 +228,20 @@ body {
   padding-top: 5vh;
 }
 
+.link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.screenshot {
+  width: 100%;
+}
+
+.project-description {
+  height: 300px;
+  font-size: 1em;
+}
+
 /* start grid fallback */
 
 .grid__item {
@@ -250,6 +264,9 @@ body {
     min-height: auto;
     margin: 0;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
