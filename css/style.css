@@ -340,12 +340,32 @@ body {
   }
 }
 
+/* Contact page styling */
+
 .contact-links-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 85vh;
   border-top: 1px solid var(--secondary-color);
+}
+
+.links-wrapper {
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.links-separator {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
 }
 
 @media all and (max-width: 500px) {
